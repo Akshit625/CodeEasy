@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeEasy - Dead Code Elimination Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>CodeEasy - Dead Code Elimination Tool</h1>
+    <div class="container">
+        <div class="input-section">
+            <h2>Input Code</h2>
+            <textarea id="input-code" placeholder="Enter your C-like code here..."></textarea>
+        </div>
+        <div class="tac-section">
+            <h2>TAC Code</h2>
+            <div id="tac-code">TAC code will appear here...</div>
+        </div>
+        <div class="output-section">
+            <h2>Optimized Code</h2>
+            <div id="output-code">Your optimized code will appear here...</div>
+        </div>
+        <div class="cfg-section">
+            <h2>CFG Graph</h2>
+            <div id="cfg-graph">CFG graph will appear here...</div>
+        </div>
+        <button id="optimize-btn">Optimize Code</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
